@@ -1,0 +1,19 @@
+{
+  "name": "NeuroTests Pro",
+  "short_name": "NeuroTests",
+  "description": "Evaluacion cognitiva profesional — 27 tests con seguimiento inteligente",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F1117",
+  "theme_color": "#1B4332",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "medical", "education"]
+}

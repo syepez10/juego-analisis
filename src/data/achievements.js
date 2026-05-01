@@ -1,0 +1,30 @@
+export const LEVELS = [
+  { level: 1, xp: 0, title: "Novato", icon: "circle-dot" },
+  { level: 2, xp: 100, title: "Aprendiz", icon: "book-open" },
+  { level: 3, xp: 250, title: "Explorador", icon: "compass" },
+  { level: 4, xp: 500, title: "Analista", icon: "microscope" },
+  { level: 5, xp: 800, title: "Estratega", icon: "target" },
+  { level: 6, xp: 1200, title: "Experto", icon: "target" },
+  { level: 7, xp: 1800, title: "Maestro", icon: "medal" },
+  { level: 8, xp: 2500, title: "Sabio", icon: "owl" },
+  { level: 9, xp: 3500, title: "Eminencia", icon: "star" },
+  { level: 10, xp: 5000, title: "Leyenda", icon: "crown" },
+];
+
+export const ACHIEVEMENTS = [
+  { id: "first_test", icon: "clipboard", title: "Primera prueba", desc: "Completa tu primer test", check: (s) => s.testsCompleted >= 1 },
+  { id: "five_tests", icon: "handshake", title: "Mano completa", desc: "Completa 5 tests", check: (s) => s.testsCompleted >= 5 },
+  { id: "ten_tests", icon: "hash", title: "Decena", desc: "Completa 10 tests", check: (s) => s.testsCompleted >= 10 },
+  { id: "all_tests", icon: "trophy", title: "Completista", desc: "Completa los 27 tests", check: (s) => s.uniqueTests >= 27 },
+  { id: "perfect", icon: "diamond", title: "Perfecci\u00f3n", desc: "100% en un test", check: (s) => s.perfectScores >= 1 },
+  { id: "three_perfect", icon: "sparkles", title: "Triple diamante", desc: "3 puntuaciones perfectas", check: (s) => s.perfectScores >= 3 },
+  { id: "streak_3", icon: "flame", title: "En racha", desc: "3 d\u00edas consecutivos", check: (s) => s.streak >= 3 },
+  { id: "streak_7", icon: "rocket", title: "Imparable", desc: "7 d\u00edas consecutivos", check: (s) => s.streak >= 7 },
+  { id: "streak_30", icon: "wind", title: "Leyenda constante", desc: "30 d\u00edas consecutivos", check: (s) => s.streak >= 30 },
+  { id: "speed_demon", icon: "zap", title: "Rel\u00e1mpago", desc: "Menos de 250ms en tiempo de reacci\u00f3n", check: (s) => s.bestReaction < 250 },
+  { id: "all_categories", icon: "grid", title: "Pol\u00edmata", desc: "Test en cada categor\u00eda", check: (s) => s.categoriesCompleted >= 4 },
+  { id: "night_owl", icon: "owl", title: "Noct\u00e1mbulo", desc: "Completa un test despu\u00e9s de las 22h", check: (s) => s.nightTest },
+  { id: "early_bird", icon: "sunrise", title: "Madrugador", desc: "Completa un test antes de las 7h", check: (s) => s.earlyTest },
+  { id: "level_5", icon: "award", title: "Rango medio", desc: "Alcanza nivel 5", check: (s) => s.level >= 5 },
+  { id: "level_10", icon: "crown", title: "Nivel m\u00e1ximo", desc: "Alcanza nivel 10", check: (s) => s.level >= 10 },
+];
